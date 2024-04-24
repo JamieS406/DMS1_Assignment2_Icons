@@ -27,21 +27,21 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img img id= "circle_id" src="img/cir.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/squ.png" height="200" width="200"/></div>
+            <div class="image-container"><img img id= "gravity1_id" src="img/gravity_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img img id= "persp1_id" src="img/persp_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img img id= "dtime1_id" src="img/dtime_1.png" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+            <div class="image-container"><img img id= "matter1_id" src="img/matter_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img img id= "dreye1_id" src="img/dreye_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img img id= "risk1_id" src="img/risk_1.png" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+            <div class="image-container"><img img id= "share1_id" src="img/share_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img img id= "limit1_id" src="img/limit_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img img id= "layer1_id" src="img/layer_1.png" height="200" width="200"/></div>
         </div>
         
     </body>
@@ -53,10 +53,10 @@
     const ding_sound = document.createElement ("audio")
     ding_sound.src = "sounds/r_ding_1.mp3"
     
-    const circle_element = document.getElementById ("circle_id")
-    circle_element.onpointerdown = () => {
-        circle_element.src = "img/hex.png"
+    const gravity_element = document.getElementById ("gravity1_id")
+    gravity_element.onpointerdown = () => {
+        gravity_element.src = "img/gravity_2.png"
         ding_sound.play ()
-        setTimeout (() => { circle_element.src = "img/cir.png"},2000)
+        setTimeout (() => { gravity_element.src = "img/gravity_1.png"},2000)
     }
 </script>
