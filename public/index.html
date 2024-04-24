@@ -65,9 +65,9 @@
     ding_sound.src = "sounds/r_ding_1.mp3"
     
     const persp_element = document.getElementById ("persep1_id")
-    gravity_element.onpointerdown = () => {
-        gravity_element.src = "img/persp_2.svg"
+   persp_element.onpointerdown = () => {
+       persp_element.src = "img/persp_2.svg"
         ding_sound.play ()
-        setTimeout (() => { gravity_element.src = "img/persp_1.svg"},1500)
+        setTimeout (() => { persp_element.src = "img/persp_1.svg"},1500)
     }
 </script>
