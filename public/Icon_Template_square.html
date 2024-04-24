@@ -19,7 +19,7 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img src="img/cir.png" height="200" width="200"/></div>
+            <div class="image-container"><img id = "circle_id" src="img/cir.png" height="200" width="200"/></div>
             <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
             <div class="image-container"><img src="img/squ.png" height="200" width="200"/></div>
         </div>
@@ -39,3 +39,15 @@
     </body>
     
 </html>
+
+<script>
+    const ding_sound = document.createElement("audio")
+    ding_sound.src = "sounds/r_ding_1.mp3"
+
+    const circle_element = document.getElementById ("circle_id")
+    circle_element.onpointerdown = () => {
+        circle_element.src = "img/hex.png"
+        ding_sound.play()
+        setTimeout (() => {circle_element.src = "img/cir.png" }, 2000)
+    }
+</script>
