@@ -15,16 +15,15 @@
             }
             
         </style>
-        
-    <style>
-    body {
-      background-image: url('A2_bg_1.png');
-    }
-    </style>
  
     </head>
 
     <body>
+        <style>
+            body {
+              background-image: url('A2_bg_1.png');
+            }
+        </style>
 
         <div class="row">
             <div class="image-container"><img img id= "circle_id" src="img/cir.png" height="200" width="200"/></div>
@@ -57,6 +56,6 @@
     circle_element.onpointerdown = () => {
         circle_element.src = "img/hex.png"
         ding_sound.play ()
-        setTimeout (() => { circle_element.src = "img/cir.png"}, 2000)
+        setTimeout (() => { circle_element.src = "img/cir.png"},2000)
     }
 </script>
