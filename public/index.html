@@ -13,11 +13,8 @@
                 vertical-align: middle;
                 padding:20px;
             }
-        </style>
-            body {
-              background-image: url('A2_bg_1.png');
-            }
-        </style>   
+            
+       
     </head>
 
     <body>
@@ -45,13 +42,14 @@
 </html>
 
 <script>
+    //interaction for icon 1
     const ding_sound = document.createElement("audio")
     ding_sound.src = "sounds/r_ding_1.mp3"
 
     const circle_element = document.getElementById ("circle_id")
     circle_element.onpointerdown = () => {
         circle_element.src = "img/hex.png"
-        ding_sound.play()
-        setTimeout (() => {circle_element.src = "img/cir.png" }, 2000)
+        ding_sound.play ()
+        setTimeout (() => { circle_element.src = "img/cir.png" }, 2000)
     }
 </script>
