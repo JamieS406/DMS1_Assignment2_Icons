@@ -60,4 +60,15 @@
         setTimeout (() => { gravity_element.src = "img/gravity_1.svg"},500)
     }
 
+     //interaction for icon 2
+     const twinkle_2_sound = document.createElement ("audio")
+    twinkle_2_sound.src = "sounds/ctwinkle.mp3"
+    
+    const persp_element = document.getElementById ("persp1_id")
+    persp_element.onpointerdown = () => {
+        persp_element.src = "img/persp_2.svg"
+        twinkle_2_sound.play ()
+        setTimeout (() => { persp_element.src = "img/persp_1.svg"},500)
+    }
+
 </script>
