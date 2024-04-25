@@ -50,22 +50,14 @@
 
 <script>
     //interaction for icon 1
-    const ding_sound = document.createElement ("audio")
-    ding_sound.src = "sounds/r_ding_1.mp3"
+    const twinkle_sound = document.createElement ("audio")
+    twinkle_sound.src = "sounds/ctwinkle.mp3"
     
     const gravity_element = document.getElementById ("gravity1_id")
     gravity_element.onpointerdown = () => {
         gravity_element.src = "img/gravity_2.svg"
-        ding_sound.play ()
+        twinkle_sound.play ()
         setTimeout (() => { gravity_element.src = "img/gravity_1.svg"},1500)
     }
-    const ding_sound = document.createElement ("audio")
-    ding_sound.src = "sounds/r_ding_1.mp3"
-    
-    const persp_element = document.getElementById ("persp1_id")
-    persp_element.onpointerdown = () => {
-        persp_element.src = "img/persp_2.svg"
-        ding_sound.play ()
-        setTimeout (() => { persp_element.src = "img/persp_1.svg"},1500)
-    }
+
 </script>
