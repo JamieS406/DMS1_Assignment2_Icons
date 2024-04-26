@@ -50,13 +50,13 @@
 
 <script>
     //interaction for gravity icon
-    const twinkle_sound = document.createElement ("audio")
-    twinkle_sound.src = "sounds/ctwinkle.mp3"
+    const gravity_sound = document.createElement ("audio")
+    gravity_sound.src = "sounds/gravitysound.mp3"
     
     const gravity_element = document.getElementById ("gravity1_id")
     gravity_element.onpointerdown = () => {
         gravity_element.src = "img/gravity_2.svg"
-        twinkle_sound.play ()
+        gravity_sound.play ()
         setTimeout (() => { gravity_element.src = "img/gravity_1.svg"},500)
     }
 
@@ -79,7 +79,7 @@
     dreye_element.onpointerdown = () => {
         dreye_element.src = "img/dreye_2.svg"
         eye_sound.play ()
-        setTimeout (() => { dreye_element.src = "img/dreye_1.svg"},500)
+        setTimeout (() => { dreye_element.src = "img/dreye_1.svg"},1500)
     }
 
 </script>
