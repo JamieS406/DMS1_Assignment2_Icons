@@ -82,4 +82,15 @@
         setTimeout (() => { dreye_element.src = "img/dreye_1.svg"},1500)
     }
 
+    //interaction for limit icon
+    const limit_sound = document.createElement ("audio")
+    limit_sound.src = "sounds/limitsound.mp3"
+    
+    const limit_element = document.getElementById ("limit1_id")
+    limit_element.onpointerdown = () => {
+        limit_element.src = "img/limit_2.svg"
+        limit_sound.play ()
+        setTimeout (() => { limit_element.src = "img/limit_1.svg"},1500)
+    }
+
 </script>
