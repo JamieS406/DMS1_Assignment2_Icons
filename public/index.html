@@ -57,7 +57,7 @@
     gravity_element.onpointerdown = () => {
         gravity_element.src = "img/gravity_2.svg"
         gravity_sound.play ()
-        setTimeout (() => { gravity_element.src = "img/gravity_1.svg"},500)
+        setTimeout (() => { gravity_element.src = "img/gravity_1.svg"},1500)
     }
 
      //interaction for persp icon
@@ -68,7 +68,7 @@
     persp_element.onpointerdown = () => {
         persp_element.src = "img/persp_2.svg"
         twinkle_2_sound.play ()
-        setTimeout (() => { persp_element.src = "img/persp_1.svg"},500)
+        setTimeout (() => { persp_element.src = "img/persp_1.svg"},1500)
     }
 
      //interaction for time icon
@@ -82,8 +82,8 @@
         setTimeout (() => { time_element.src = "img/dtime_1.svg"},1500)
     }
 
-       //interaction for matter icon
-       const matter_sound = document.createElement ("audio")
+    //interaction for matter icon
+    const matter_sound = document.createElement ("audio")
     matter_sound.src = "sounds/mattersound.mp3"
     
     const matter_element = document.getElementById ("matter1_id")
@@ -103,6 +103,18 @@
         eye_sound.play ()
         setTimeout (() => { dreye_element.src = "img/dreye_1.svg"},1500)
     }
+
+    //interaction for risk icon
+    const risk_sound = document.createElement ("audio")
+    risk_sound.src = "sounds/risksound.mp3"
+    
+    const risk_element = document.getElementById ("risk1_id")
+    risk_element.onpointerdown = () => {
+        risk_element.src = "img/risk_2.svg"
+        eye_sound.play ()
+        setTimeout (() => { risk_element.src = "img/risk_1.svg"},1500)
+    }
+
 
     //interaction for limit icon
     const limit_sound = document.createElement ("audio")
