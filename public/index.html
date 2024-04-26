@@ -115,6 +115,17 @@
         setTimeout (() => { risk_element.src = "img/risk_1.svg"},1500)
     }
 
+    //interaction for share icon
+    const share_sound = document.createElement ("audio")
+    share_sound.src = "sounds/sharesound.mp3"
+    
+    const share_element = document.getElementById ("share1_id")
+    share_element.onpointerdown = () => {
+        share_element.src = "img/share_2.svg"
+        share_sound.play ()
+        setTimeout (() => { share_element.src = "img/share_1.svg"},1500)
+    }
+
 
     //interaction for limit icon
     const limit_sound = document.createElement ("audio")
