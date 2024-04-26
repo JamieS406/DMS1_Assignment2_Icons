@@ -89,7 +89,7 @@
     const matter_element = document.getElementById ("matter1_id")
     matter_element.onpointerdown = () => {
         matter_element.src = "img/matter_2.svg"
-        matter_element_sound.play ()
+        matter_sound.play ()
         setTimeout (() => { matter_element.src = "img/matter_1.svg"},1500)
     }
 
