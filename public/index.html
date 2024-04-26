@@ -82,6 +82,17 @@
         setTimeout (() => { time_element.src = "img/dtime_1.svg"},1500)
     }
 
+       //interaction for matter icon
+       const matter_sound = document.createElement ("audio")
+    matter_sound.src = "sounds/mattersound.mp3"
+    
+    const matter_element = document.getElementById ("matter1_id")
+    matter_element.onpointerdown = () => {
+        matter_element.src = "img/matter_2.svg"
+        matter_element_sound.play ()
+        setTimeout (() => { matter_element.src = "img/matter_1.svg"},1500)
+    }
+
     //interaction for eye icon
     const eye_sound = document.createElement ("audio")
     eye_sound.src = "sounds/eyesound.mp3"
