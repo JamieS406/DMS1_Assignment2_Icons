@@ -49,7 +49,7 @@
 </html>
 
 <script>
-    //interaction for icon 1
+    //interaction for gravity icon
     const twinkle_sound = document.createElement ("audio")
     twinkle_sound.src = "sounds/ctwinkle.mp3"
     
@@ -60,7 +60,7 @@
         setTimeout (() => { gravity_element.src = "img/gravity_1.svg"},500)
     }
 
-     //interaction for icon 2
+     //interaction for persp icon
      const twinkle_2_sound = document.createElement ("audio")
     twinkle_2_sound.src = "sounds/ctwinkle.mp3"
     
@@ -69,6 +69,17 @@
         persp_element.src = "img/persp_2.svg"
         twinkle_2_sound.play ()
         setTimeout (() => { persp_element.src = "img/persp_1.svg"},500)
+    }
+
+    //interaction for eye icon
+    const eye_sound = document.createElement ("audio")
+    eye_sound.src = "sounds/eyesound.mp3"
+    
+    const dreye_element = document.getElementById ("dreye1_id")
+    dreye_element.onpointerdown = () => {
+        dreye_element.src = "img/dreye_2.svg"
+        eye_sound.play ()
+        setTimeout (() => { dreye_element.src = "img/dreye_1.svg"},500)
     }
 
 </script>
