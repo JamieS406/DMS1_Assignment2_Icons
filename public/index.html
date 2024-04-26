@@ -126,7 +126,6 @@
         setTimeout (() => { share_element.src = "img/share_1.svg"},1500)
     }
 
-
     //interaction for limit icon
     const limit_sound = document.createElement ("audio")
     limit_sound.src = "sounds/limitsound.mp3"
@@ -136,6 +135,17 @@
         limit_element.src = "img/limit_2.svg"
         limit_sound.play ()
         setTimeout (() => { limit_element.src = "img/limit_1.svg"},1500)
+    }
+
+     //interaction for layer icon
+     const layer_sound = document.createElement ("audio")
+    layer_sound.src = "sounds/layersound.mp3"
+    
+    const layer_element = document.getElementById ("layer1_id")
+    layer_element.onpointerdown = () => {
+        layer_element.src = "img/layer_2.svg"
+        layer_sound.play ()
+        setTimeout (() => { layer_element.src = "img/layer_1.svg"},1500)
     }
 
 </script>
