@@ -71,6 +71,17 @@
         setTimeout (() => { persp_element.src = "img/persp_1.svg"},500)
     }
 
+     //interaction for time icon
+     const time_sound = document.createElement ("audio")
+    time_sound.src = "sounds/timesound.mp3"
+    
+    const time_element = document.getElementById ("dtime1_id")
+    time_element.onpointerdown = () => {
+        time_element.src = "img/dtime_2.svg"
+        time_sound.play ()
+        setTimeout (() => { time_element.src = "img/dtime_1.svg"},1500)
+    }
+
     //interaction for eye icon
     const eye_sound = document.createElement ("audio")
     eye_sound.src = "sounds/eyesound.mp3"
